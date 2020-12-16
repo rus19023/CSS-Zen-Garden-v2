@@ -1,6 +1,6 @@
 # CSS-Zen-Garden-v2
  
- Revival of the world-famous CSS Zen Garden project at http://csszengarden.com 
+ Revival of the world-famous CSS Zen Garden original project at http://csszengarden.com 
  
  CSS Zen Garden Twitter account @csszengarden
  
@@ -8,5 +8,8 @@
  
  Purchase the book, 'The Zen of CSS Design: Visual Enlightenment for the Web', 1ST Edition at the author's original amazon page: https://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/
 
-Send the link for your redesign to: rus19023@byui.edu
+Send a request to showcase your redesign to: rus19023@byui.edu
+
+
+
 
