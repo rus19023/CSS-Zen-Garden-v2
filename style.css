@@ -1,315 +1,194 @@
-* {
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-#css-zen-garden {
-  grid-area: "css-zen-garden";
-  border: 5px solid purple;
-}
-#css-zen-garden :before {
-  content: "id = css-zen-garden";
-  position: absolute;
-}
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
-.page-wrapper {
-  grid-area: "page-wrapper";
-  border: 5px solid purple;
-}
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-#zen-intro {
-  grid-area: "zen-intro";
-  border: 5px solid purple;
-}
 
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+
+header h1 { 
+	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+	margin-top: 10px;
+	display: block;
+	width: 219px;
+	height: 87px;
+	float: left;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header h2 { 
+	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
+	margin-top: 58px; 
+	margin-bottom: 40px; 
+	width: 200px; 
+	height: 18px; 
+	float: right;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
 header {
-  grid-area: "header";
-  border: 5px solid purple;
+	padding-top: 20px;
+	height: 87px;
 }
 
-#zen-summary {
-  grid-area: "zen-summary";
-  border: 5px solid purple;
-}
-
-.intro {
-  grid-area: "intro";
-  border: 5px solid purple;
-}
-
-#zen-supporting {
-  grid-area: "zen-supporting";
-  border: 5px solid purple;
-}
-
-#zen-preamble {
-  grid-area: "zen-preamble";
-  border: 5px solid purple;
-}
+.summary {
+	clear: both; 
+	margin: 20px 20px 20px 10px; 
+	width: 160px; 
+	float: left;
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia; 
+	text-align: center;
+	}
 
 .preamble {
-  grid-area: "preamble";
-  border: 5px solid purple;
-}
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	}
+.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
 
-.main {
-  grid-area: "main";
-  border: 5px solid purple;
-}
-
-#zen-explanation {
-  grid-area: "zen-explanation";
-  border: 5px solid purple;
-}
-
-#zen-participation {
-  grid-area: "zen-participation";
-  border: 5px solid purple;
-}
-
-#zen-benefits {
-  grid-area: "zen-benefits";
-  border: 5px solid purple;
-}
-
-#zen-requirements {
-  grid-area: "zen-requirements";
-  border: 5px solid purple;
-}
-
-.supporting {
-  grid-area: "supporting";
-  border: 5px solid purple;
-}
-
-.explanation {
-  grid-area: "explanation";
-  border: 5px solid purple;
-}
-
-#footer {
-  grid-area: "preamble";
-  border: 5px solid purple;
-}
-
-#linkList {
-  grid-area: "preamble";
-  border: 5px solid purple;
-}
-
-#linkList2 {
-  grid-area: "preamble";
-  border: 5px solid purple;
-}
-
-#lselect {
-  grid-area: "preamble";
-  border: 5px solid purple;
-}
-
-#larchives {
-  grid-area: "preamble";
-  border: 5px solid purple;
-}
-
-#lresources {
-  grid-area: "preamble";
-  border: 5px solid purple;
-}
-
-.participation {
-  grid-area: "participation";
-  border: 5px solid purple;
-}
-
-.benefits {
-  grid-area: "benefits";
-  border: 5px solid purple;
-}
-
-.requirements {
-  grid-area: "requirements";
-  border: 5px solid purple;
-}
-
-.content-info {
-  grid-area: "content-info";
-  border: 5px solid purple;
-}
-
-.zen-validate-css {
-  grid-area: "zen-validate-css";
-  border: 5px solid purple;
-}
-
-.zen-validate-html {
-  grid-area: "zen-validate-html";
-  border: 5px solid purple;
-}
-
-.zen-accessibility {
-  grid-area: "zen-accessibility";
-  border: 5px solid purple;
-}
-
-.zen-license {
-  grid-area: "zen-license";
-  border: 5px solid purple;
-}
-
-.extra1 {
-  grid-area: "extra1";
-  border: 5px solid purple;
-}
-
-.extra2 {
-  grid-area: "extra2";
-  border: 5px solid purple;
-}
-
-.extra3 {
-  grid-area: "extra3";
-  border: 5px solid purple;
-}
-
-.extra4 {
-  grid-area: "extra4";
-  border: 5px solid purple;
-}
-
-.extra5 {
-  grid-area: "extra5";
-  border: 5px solid purple;
-}
-
-.extra6 {
-  grid-area: "extra6";
-  border: 5px solid purple;
-}
-
-.zen-github {
-  grid-area: "zen-github";
-  border: 5px solid purple;
-}
+footer { 
+	text-align: center; 
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
 
 .sidebar {
-  grid-area: "sidebar";
-  border: 5px solid purple;
-}
+	margin-left: 600px; 
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	}
+.sidebar .wrapper { 
+	font: 10px verdana, sans-serif; 
+	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 130px; 
+	}
+.sidebar h3.select { 
+	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
+	margin: 10px 0 5px 0; 
+	width: 97px; 
+	height: 16px; 
 
-.wrapper {
-  grid-area: "wrapper";
-  border: 5px solid purple;
-}
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives { 
+	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:57px; 
+	height: 14px; 
 
-.design-selection {
-  grid-area: "design-selection";
-  border: 5px solid purple;
-}
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources { 
+	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:63px; 
+	height: 10px; 
 
-.select {
-  grid-area: "select";
-  border: 5px solid purple;
-}
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
 
-#design-selection {
-  grid-area: "design-selection-id";
-  border: 5px solid purple;
-}
 
-.designer-name {
-  grid-area: "designer-name";
-  border: 5px solid purple;
-}
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #988F5E;
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
 
-.design-name {
-  grid-area: "design-name";
-  border: 5px solid purple;
-}
 
-.design-archives {
-  grid-area: "design-archives";
-  border: 5px solid purple;
-}
-
-#design-archives {
-  grid-area: "design-archives-id";
-  border: 5px solid purple;
-}
-
-.archives {
-  grid-area: "archives";
-  border: 5px solid purple;
-}
-
-.next {
-  grid-area: "next";
-  border: 5px solid purple;
-}
-
-.indicator {
-  grid-area: "indicator";
-  border: 5px solid purple;
-}
-
-.viewall {
-  grid-area: "viewall";
-  border: 5px solid purple;
-}
-
-.zen-resources {
-  grid-area: "zen-resources";
-  border: 5px solid purple;
-}
-
-#zen-resources {
-  grid-area: "zen-resources-id";
-  border: 5px solid purple;
-}
-
-.css-resources {
-  grid-area: "css-resources";
-  border: 5px solid purple;
-}
-
-.zen-faq {
-  grid-area: "zen-faq";
-  border: 5px solid purple;
-}
-
-.zen-submit {
-  grid-area: "zen-submit";
-  border: 5px solid purple;
-}
-
-.zen-translations {
-  grid-area: "zen-translations";
-  border: 5px solid purple;
-}
-
-.resources {
-  grid-area: "resources";
-  border: 5px solid purple;
-}
-
-.view-css {
-  grid-area: "view-css";
-  border: 5px solid purple;
-}
-
-.extra6 {
-  grid-area: "extra6";
-  border: 5px solid purple;
-}
-
-.extra6 {
-  grid-area: "extra6";
-  border: 5px solid purple;
-}
-
-.extra6 {
-  grid-area: "extra6";
-  border: 5px solid purple;
-}
-
-/*# sourceMappingURL=style.css.map */
+.extra1 {
+	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
+	position: absolute; 
+	top: 40px; 
+	right: 0; 
+	width: 148px; 
+	height: 110px;
+	}
