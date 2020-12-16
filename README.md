@@ -1,4 +1,4 @@
-# CSS_Zen_Garden_v2
+# CSS-Zen-Garden-v2
  
  Revival of the world-famous CSS Zen Garden project at http://csszengarden.com 
  
